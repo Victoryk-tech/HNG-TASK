@@ -4,6 +4,8 @@ let navigation = document.querySelector("navigation");
 let navHome = document.getElementById("nav-home");
 let closetBtn = document.getElementById("bx-x");
 let bodyWhole = document.getElementById("wrapper");
+
+// timee and day
 window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 120);
 });
@@ -19,6 +21,8 @@ function updateTimeAndDay() {
 
 setInterval(updateTimeAndDay, 1000);
 updateTimeAndDay();
+
+// menu
 menuIcon.addEventListener("click", () => {
   navHome.style.visibility = "visible";
   menuIcon.style.visibility = "hidden";

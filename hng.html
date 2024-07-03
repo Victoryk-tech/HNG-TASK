@@ -30,6 +30,19 @@
         <div class="logo">
           <h2>V<span>ictory.</span></h2>
         </div>
+
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#" onclick="scroll_to_target()">About</a>
+
+          <a href="#" onclick="scroll_to_goals()">Goals</a>
+        </div>
+        <!-- time and day -->
+        <div class="timing">
+          <p data-testid="currentTimeUTC"><span id="time"></span></p>
+          <p data-testid="currentDay"><span id="day"></span></p>
+        </div>
+
         <div class="menu-home">
           <div class="menu-spans" id="">
             <div class="menu-icon" id="menu-icon">
@@ -41,26 +54,12 @@
             <div class="bx-x" id="bx-x">
               <span class="material-symbols-sharp">close</span>
             </div>
+
             <a href="#">Home</a>
             <a href="#" onclick="scroll_to_target()">About</a>
-            <a href="#">Service</a>
-            <a href="#" onclick=" scroll_to_projects()">Projects</a>
-            <a href="#" onclick="scroll_to_contact()">Contact</a>
+
+            <a href="#" onclick=" scroll_to_goals()">Goals</a>
           </div>
-        </div>
-
-        <div class="navigation">
-          <a href="#">Home</a>
-          <a href="#" onclick="scroll_to_target()">About</a>
-          <a href="#">Service</a>
-          <a href="#" onclick="scroll_to_projects()">Projects</a>
-          <a href="#" onclick="scroll_to_contact()">Contact</a>
-        </div>
-
-        <div class="top-btnn">
-          <a href="#" onclick="scroll_to_contact()" class="h-btnn"
-            >Contact me</a
-          >
         </div>
       </header>
 
@@ -91,10 +90,6 @@
                   <i class="fab fa-github"></i
                 ></a>
               </div>
-
-              <div class="main-btn">
-                <a href="#" class="btn btn2">Resume</a>
-              </div>
             </div>
 
             <div class="right" data-aos="zoom-in-up">
@@ -109,7 +104,7 @@
         <!-- about me -->
         <section class="about" id="about">
           <div class="about-img" data-aos="zoom-in-down">
-            <img src="/images/suitpic.jpg" data-testid="slackProfilePicture" />
+            <img src="/images/suitpic.jpg" alt="slackProfile" />
           </div>
 
           <div class="about-text" data-aos="zoom-in-up">
@@ -140,7 +135,8 @@
           </div>
         </section>
 
-        <section class="projects" id="projects">
+        <!-- my tech goalssss -->
+        <section class="projects" id="goals">
           <div class="center-text" data-aos="fade-down">
             <h2>My <span>Tech Goals</span></h2>
           </div>
@@ -148,73 +144,83 @@
           <div class="project-content" data-aos="zoom-in-up">
             <div class="row">
               <div class="row-left">
-                <h2>My goals in tech</h2>
+                <h2>My goals in tech for the Next two years</h2>
+                <div class="template">
+                  <h3>Year One:</h3>
+                  <p>
+                    <span> Develop expertise in a specific area: </span>I aim to
+                    dive deeper into web development and becoming proficient in
+                    tools like Next.js,typescript,node.js and eventually learn
+                    machine language. <br />
+                    <span> Build personal projects:</span> I plan to create at
+                    least five personal projects, showcasing my skills and
+                    exploring new technologies. Attend industry conferences: I
+                    hope to attend two conferences, networking with
+                    professionals and learning about the latest advancements.
+                  </p>
+                </div>
+                <div class="template">
+                  <h3>Year Two:</h3>
+                  <p>
+                    <span> Lead a team project:</span> I aspire to lead a team
+                    project, applying my skills and experience to drive
+                    innovation and collaboration. <br />Publish technical
+                    articles: I aim to write and publish at least four technical
+                    articles, sharing my knowledge and experiences with the
+                    community. <br />
+                    <span> Mentor a developer: </span>I hope to pay it forward
+                    by mentoring developers, helping them navigate the industry
+                    and grow in their career.
+                  </p>
 
-                <p>
-                  <h3>Year One:</h3> Develop expertise in a specific area: I
-                  aim to dive deeper into web development and becoming
-                  proficient in tools like Next.js,typescript,node.js and
-                  eventually learn machine language. <br> Build personal projects: I
-                  plan to create at least five personal projects, showcasing my
-                  skills and exploring new technologies. Attend industry
-                  conferences: I hope to attend two conferences, networking with
-                  professionals and learning about the latest advancements.
-                 
-                </p>
-                
-          
-                <p>
-                  <h3>Year Two:</h3> Lead a team project: I aspire to lead a
-                  team project, applying my skills and experience to drive
-                  innovation and collaboration. <br>Publish technical articles: I
-                  aim to write and publish at least four technical articles,
-                  sharing my knowledge and experiences with the community. <br>
-                  Mentor a developer: I hope to pay it forward by
-                  mentoring developers, helping them navigate the
-                  industry and grow in their career.
-                </p>
-                <p>
-                  By achieving these goals, I'm excited to take my skills to the
-                  next level, make meaningful contributions to the tech
-                  community before the next two years, and continue growing as a professional in the
-                  ever-evolving tech landscape.
-                </p>
+                  <p>
+                    By achieving these goals, I'm excited to take my skills to
+                    the next level, make meaningful contributions to the tech
+                    community before the next two years, and continue growing as
+                    a professional in the ever-evolving tech landscape.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!-- contact me directly -->
-
-        <section class="contact" id="contact">
-          <div class="center-text" data-aos="fade-down">
-            <h2>Contact <span>Me</span></h2>
-          </div>
-
-          <div class="contact-form" data-aos="zoom-in">
-            <form action="">
-              <input type="text" placeholder="Your name" required />
-              <input type="email" placeholder="Email Address" required />
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Write message here....."
-                required
-              ></textarea>
-              <input type="submit" name="" value="Send " class="send-btn" />
-            </form>
           </div>
         </section>
       </main>
 
       <footer>
-        <div class="copyright">
-          <p>2024 Victory Kemele, All Rights Reserved</p>
+        <!-- useful links -->
+        <div id="links" class="uselinks">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>
+              <a data-testid="hngLink" href="http://hng.tech/learn"
+                >HNG Learn</a
+              >
+            </li>
+            <li>
+              <a data-testid="keywordLink" href="http://keyword.dog"
+                >Keyword Dog</a
+              >
+            </li>
+            <li>
+              <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site"
+                >Scrape Any Web</a
+              >
+            </li>
+          </ul>
         </div>
-        <a href="#home" class="scroll-top">
-          <span class="material-symbols-sharp">Arrow_Upward</span>
-        </a>
+        <div class="foot">
+          <div class="copyright">
+            <p>2024 Victory Kemele, All Rights Reserved</p>
+          </div>
+          <a
+            href="#"
+            onclick=" scroll_to_projects()"
+            class="scroll-top"
+            id="scroll"
+          >
+            <span class="material-symbols-sharp">Arrow_Upward</span>
+          </a>
+        </div>
       </footer>
     </div>
 
